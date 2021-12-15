@@ -14,5 +14,9 @@ public class App {
 		System.out.println(text + name + endOfSentence);
 
 	}
+	
+	public String addStrings(String first, String second) {
+		return first + second;
+	}
 
 }

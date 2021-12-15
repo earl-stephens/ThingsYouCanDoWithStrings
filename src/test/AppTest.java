@@ -12,4 +12,14 @@ public class AppTest {
 		Assert.assertNotNull(app);
 	}
 	
+	@Test
+	public void shouldReturnConcatenatedString() {
+		App app = new App();
+		String first = "Darth ";
+		String second = "Vader";
+		String predicted = "Darth Vader";
+		String result = app.addStrings(first, second);
+		Assert.assertEquals(predicted, result);
+	}
+	
 }
